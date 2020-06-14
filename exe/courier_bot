@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'courier_bot'
+
+CourierBot.load do |app|
+  Rack::Server.start app: app, Port: ENV['PORT']
+end
