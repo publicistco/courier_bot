@@ -2,6 +2,12 @@
 
 This is highly experimental. More docs coming soon.
 
+### Roadmap
+
+- Polling loops for asynchronous task updates
+- User identity and doing username looks via the Slack API
+- Leverage Slack BlockKit via a DSL
+
 ## Installation
 
 Add this line to your application's Gemfile:

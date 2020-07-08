@@ -6,7 +6,10 @@ module CourierBot
     end
 
     def identify!
-      @bot_id = @slack_client.auth_test['user_id']
+      auth = @slack_client.auth_test
+
+      @bot_id = auth['user_id']
+      @bot_name = auth['user']
     end
 
     def dispatch(event)
