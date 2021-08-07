@@ -1,5 +1,7 @@
 require 'ostruct'
 
+require 'active_support'
+require 'active_support/core_ext'
 require 'mustermann'
 require 'slack'
 require 'sucker_punch'
@@ -9,6 +11,7 @@ require 'courier_bot/app'
 require 'courier_bot/bot'
 require 'courier_bot/contexts/bot'
 require 'courier_bot/contexts/task'
+require 'courier_bot/contexts/timer'
 require 'courier_bot/slack_http_request'
 require 'courier_bot/version'
 

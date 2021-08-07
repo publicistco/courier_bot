@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     courier_bot (0.1.0)
+      activesupport (~> 6.0)
       mustermann (~> 1.1)
       rack (~> 2.2)
       sinatra (~> 2.0)

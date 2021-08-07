@@ -15,6 +15,10 @@ module CourierBot
       def task(*args, &block)
         @bot.add_task(*args, &block)
       end
+
+      def every(*args, &block)
+        @bot.add_periodic_task *args, &block
+      end
     end
   end
 end

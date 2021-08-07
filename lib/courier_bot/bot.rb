@@ -50,6 +50,14 @@ module CourierBot
       @tasks << [pattern, task_class]
     end
 
+    def add_periodic_task(wait_time, **kwargs, &block)
+      ctx = Contexts::Timer.new(@slack_client, **kwargs)
+
+      Concurrent::TimerTask
+        .new(execution_interval: wait_time.to_i) { ctx.evaluate(&block) }
+        .execute
+    end
+
     def self.event_blocks_to_text_string(event)
       elements = event[:blocks]
         .flat_map { |block| block[:elements] }

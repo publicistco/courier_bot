@@ -23,9 +23,6 @@ module CourierBot
         @event_payload[:ts]
       end
 
-      def poll_every(duration, &block)
-      end
-
       def post_message_to_channel(message)
         slack_client.chat_postMessage(
           channel: slack_channel,
