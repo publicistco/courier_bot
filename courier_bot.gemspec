@@ -32,4 +32,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'slack-ruby-client', '0.14.6'
   spec.add_dependency 'sinatra', '~> 2.0'
   spec.add_dependency 'sucker_punch', '~> 2.1'
+  spec.add_dependency 'puma', '~> 5.6'
 end
