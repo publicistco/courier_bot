@@ -34,9 +34,10 @@ module CourierBot
 
       def upload_file_to_channel(io, content_type:, filename:, **kwargs)
         slack_client.files_upload(
-          channel: slack_channel,
+          channels: slack_channel,
           file: Faraday::UploadIO.new(io, content_type),
           filename: filename,
+          as_user: true,
           **kwargs
         )
       end
