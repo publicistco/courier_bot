@@ -12,12 +12,12 @@ module CourierBot
 
       private
 
-      def task(*args, &block)
-        @bot.add_task(*args, &block)
+      def task(*args, **kwargs, &block)
+        @bot.add_task(*args, **kwargs, &block)
       end
 
-      def every(*args, &block)
-        @bot.add_periodic_task *args, &block
+      def every(*args, **kwargs, &block)
+        @bot.add_periodic_task *args, **kwargs, &block
       end
     end
   end
