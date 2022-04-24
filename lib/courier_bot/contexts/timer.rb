@@ -1,6 +1,8 @@
 module CourierBot
   module Contexts
     class Timer
+      include Contexts::Shared
+
       def initialize(slack_client, on:)
         @slack_client = slack_client
         @slack_channel = on
