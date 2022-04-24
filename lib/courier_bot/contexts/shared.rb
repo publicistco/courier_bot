@@ -3,6 +3,10 @@ module CourierBot
     module Shared
       private
 
+      def config_value(name)
+        ENV.fetch("COURIER_BOT_#{name.to_s.upcase}")
+      end
+
       def slack_channel
         raise NotImplementedError
       end
