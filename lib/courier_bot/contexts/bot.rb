@@ -12,6 +12,10 @@ module CourierBot
 
       private
 
+      def on_link_shared(*args, &block)
+        @bot.add_event_handler(:link_shared, &block)
+      end
+
       def task(*args, **kwargs, &block)
         @bot.add_task(*args, **kwargs, &block)
       end

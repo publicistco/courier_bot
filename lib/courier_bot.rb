@@ -13,6 +13,7 @@ require 'courier_bot/contexts/bot'
 require 'courier_bot/contexts/shared'
 require 'courier_bot/contexts/task'
 require 'courier_bot/contexts/timer'
+require 'courier_bot/contexts/link_shared_task'
 require 'courier_bot/slack_http_request'
 require 'courier_bot/version'
 
