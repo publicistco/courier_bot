@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'activesupport', '~> 6.0'
   spec.add_dependency 'mustermann', '~> 1.1'
-  spec.add_dependency 'rack', '~> 2.2'
+  spec.add_dependency 'rack', '>= 2.2', '< 4.0'
   spec.add_dependency 'slack-ruby-client', '0.14.6'
   spec.add_dependency 'sinatra', '~> 2.0'
   spec.add_dependency 'sucker_punch', '~> 2.1'
